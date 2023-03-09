@@ -4,7 +4,7 @@
   <nav role="navigation" class="navbar navbar-dark navbar-static-top bg-info bg-gradient">
     <div class="container">
       <div class="navbar-header">
-       <h2>Sistema de Inventario </h2>
+       <h2>Sistema de Inventario TREDA S. </h2>
       </div>
     </div>
   </nav>
