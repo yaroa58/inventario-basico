@@ -4,7 +4,7 @@
   <nav role="navigation" class="navbar navbar-dark navbar-static-top bg-info bg-gradient">
     <div class="container">
       <div class="navbar-header">
-        <a href="https://www.configuroweb.com/46-aplicaciones-gratuitas-en-php-python-y-javascript/#Aplicaciones-gratuitas-en-PHP,-Python-y-Javascript" target="_blank" class="navbar-brand">Sistema Básico de Inventario - PHP</a>
+       <h2>Sistema de Inventario </h2>
       </div>
     </div>
   </nav>
