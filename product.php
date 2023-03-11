@@ -38,12 +38,11 @@ $inventory->checkLogin();
                                     <tr>
                                         <th>ID</th>
                                         <th>Categoría</th>
-                                        <th>Nombre de Marca</th>
                                         <th>Nombre de Producto</th>
-                                        <th>Modeo de Producto</th>
+                                        <th>SKU de Producto</th>
+                                        <th>Descripción</th>
                                         <th>Cantidad</th>
-                                        <th>Nombre de Proveedor</th>
-                                        <th>Estado</th>
+                                        
                                         <th>Acción</th>
                                     </tr>
                                 </thead>
