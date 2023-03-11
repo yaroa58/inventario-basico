@@ -7,7 +7,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"extUtilities":[]} -->
-<p>Dada la relevancia de este tema, no es la primera vez que abordo los problemas de inventario, tengo una <a href="https://www.configuroweb.com/sistema-de-inventario-configuroweb/" target="_blank" rel="noreferrer noopener">versión de pago de sistema de inventario</a> 
+<p>Dada la relevancia de este tema, no es la primera vez que abordo los problemas de inventario, tengo una versión de pago de sistema de inventario</a> 
 <!-- /wp:paragraph -->
 
 
