@@ -21,11 +21,11 @@ $inventory->checkLogin();
 				<div class="card-header">
 					<div class="row">
 						<div class="col-lg-10 col-md-10 col-sm-8 col-xs-6">
-							<h3 class="card-title">Clientes</h3>
+							<h3 class="card-title">Tiendas</h3>
 						</div>
 						<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6" align="right" color="white">
 							<button type="button" name="add" id="addCustomer" data-bs-toggle="modal" data-bs-target="#userModal" class="btn btn-info bg-gradient btn-sm rounded-0"><i class="far fa-plus-square"></i>
-								Agregar Cliente
+								Agregar tienda
 							</button>
 						</div>
 					</div>
@@ -39,9 +39,7 @@ $inventory->checkLogin();
 									<tr>
 										<th>ID</th>
 										<th>Nombre</th>
-										<th>Dirección</th>
-										<th>Móvil</th>
-										<th>Balance</th>
+										<th>Fecha Apertura</th>
 										<th>Acción</th>
 									</tr>
 								</thead>
@@ -55,7 +53,7 @@ $inventory->checkLogin();
 			<div class="modal-dialog modal-dialog-centered  rounded-0">
 				<div class="modal-content rounded-0">
 					<div class="modal-header">
-						<h4 class="modal-title"><i class="fa fa-plus"></i> Agregar Cliente</h4>
+						<h4 class="modal-title"><i class="fa fa-plus"></i> Agregar tienda</h4>
 						<button type="button" class="btn-close text-xs" data-bs-dismiss="modal"></button>
 					</div>
 					<div class="modal-body">
@@ -64,20 +62,12 @@ $inventory->checkLogin();
 								<input type="hidden" name="userid" id="userid" />
 								<input type="hidden" name="btn_action" id="btn_action" value="customerAdd" />
 								<div class="mb-3">
-									<label class="control-label">Nombre</label>
+									<label class="control-label">Fecha Apertura</label>
 									<input type="text" name="cname" id="cname" class="form-control rounded-0" required />
 								</div>
 								<div class="mb-3">
-									<label class="control-label"># Móvil</label>
+									<label class="control-label">Nombre de Sucursal</label>
 									<input type="number" name="mobile" id="mobile" class="form-control rounded-0" required />
-								</div>
-								<div class="mb-3">
-									<label class="control-label">Balance</label>
-									<input type="number" name="balance" id="balance" class="form-control rounded-0" required />
-								</div>
-								<div class="mb-3">
-									<label class="control-label">Dirección</label>
-									<textarea name="address" id="address" class="form-control rounded-0" rows="5" required></textarea>
 								</div>
 							</form>
 						</div>

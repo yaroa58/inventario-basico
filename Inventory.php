@@ -78,8 +78,8 @@ class Inventory
 			$sqlQuery .= '(id LIKE "%' . $_POST["search"]["value"] . '%" ';
 			$sqlQuery .= '(name LIKE "%' . $_POST["search"]["value"] . '%" ';
 			$sqlQuery .= 'OR address LIKE "%' . $_POST["search"]["value"] . '%" ';
-			$sqlQuery .= 'OR mobile LIKE "%' . $_POST["search"]["value"] . '%") ';
-			$sqlQuery .= 'OR balance LIKE "%' . $_POST["search"]["value"] . '%") ';
+			// $sqlQuery .= 'OR mobile LIKE "%' . $_POST["search"]["value"] . '%") ';
+			// $sqlQuery .= 'OR balance LIKE "%' . $_POST["search"]["value"] . '%") ';
 		}
 		if (!empty($_POST["order"])) {
 			$sqlQuery .= 'ORDER BY ' . $_POST['order']['0']['column'] . ' ' . $_POST['order']['0']['dir'] . ' ';
@@ -97,8 +97,8 @@ class Inventory
 			$customerRows[] = $customer['id'];
 			$customerRows[] = $customer['name'];
 			$customerRows[] = $customer['address'];
-			$customerRows[] = $customer['mobile'];
-			$customerRows[] = number_format($customer['balance'], 2);
+			// $customerRows[] = $customer['mobile'];
+			// $customerRows[] = number_format($customer['balance'], 2);
 			$customerRows[] = '<button type="button" name="update" id="' . $customer["id"] . '" class="btn btn-primary btn-sm rounded-0 update" title="update"><i class="fa fa-edit"></i></button><button type="button" name="delete" id="' . $customer["id"] . '" class="btn btn-danger btn-sm rounded-0 delete" ><i class="fa fa-trash"></button>';
 			$customerRows[] = '';
 			$customerData[] = $customerRows;
@@ -115,8 +115,8 @@ class Inventory
 	public function saveCustomer()
 	{
 		$sqlInsert = "
-			INSERT INTO " . $this->customerTable . "(name, address, mobile, balance) 
-			VALUES ('" . $_POST['cname'] . "', '" . $_POST['address'] . "', '" . $_POST['mobile'] . "', '" . $_POST['balance'] . "')";
+			INSERT INTO " . $this->customerTable . "(name, address,) 
+			VALUES ('" . $_POST['cname'] . "', '" . $_POST['address'] . "')";
 		mysqli_query($this->dbConnect, $sqlInsert);
 		echo 'New Customer Added';
 	}
@@ -125,7 +125,7 @@ class Inventory
 		if ($_POST['userid']) {
 			$sqlInsert = "
 				UPDATE " . $this->customerTable . " 
-				SET name = '" . $_POST['cname'] . "', address= '" . $_POST['address'] . "', mobile = '" . $_POST['mobile'] . "', balance = '" . $_POST['balance'] . "' 
+				SET name = '" . $_POST['cname'] . "', address= '" . $_POST['address'] . "' 
 				WHERE id = '" . $_POST['userid'] . "'";
 			mysqli_query($this->dbConnect, $sqlInsert);
 			echo 'Customer Edited';

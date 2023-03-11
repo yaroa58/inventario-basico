@@ -1,3 +1,4 @@
+/* This is a jQuery function that is executed when the document is ready. */
 $(document).ready(function() {
     $('#addBrand').click(function() {
         $('#brandModal').modal('show');
@@ -6,6 +7,7 @@ $(document).ready(function() {
         $('#action').val('Agregar');
         $('#btn_action').val('addBrand');
     });
+
 
     var branddataTable = $('#brandList').DataTable({
         "lengthChange": false,
